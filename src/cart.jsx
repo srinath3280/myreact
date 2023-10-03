@@ -63,8 +63,11 @@ function Cart(){
     <div className="App">
         <div style={{backgroundColor:"skyblue",height:"100px",display:"flex",justifyContent:"center",alignItems:"center"}}>
             <h1>Use Reducer</h1>
-            <div style={{marginLeft:"700px",fontSize:"30px"}}>
-                <span>{carts.reduce((x,y)=>x+y.amount,0)}</span>
+            <div style={{marginLeft:"700px",fontSize:"25px"}}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </svg>
+            <span>{carts.reduce((x,y)=>x+y.amount,0)}</span>
             </div>
         </div>
         <h1>Your Bag</h1>
@@ -86,7 +89,7 @@ function Cart(){
                                 <div>
                                     <button id="btn2" onClick={()=>{inc(a)}}>+</button>
                                 </div>
-                                <div>
+                                <div style={{fontSize:"20px"}}>
                                     <span id="cnt">{a.amount}</span>
                                 </div>
                                 <div>
