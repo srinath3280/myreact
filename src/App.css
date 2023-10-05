@@ -1,6 +1,12 @@
 .App {
   text-align: center;
 }
+.btn1{
+  display: block;
+}
+.btn2{
+  display: none;
+}
 
 .App-logo {
   height: 40vmin;
